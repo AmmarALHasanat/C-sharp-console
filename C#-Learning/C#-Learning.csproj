@@ -8,4 +8,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="first.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="List\" />
+    <Folder Include="OOP\Composition\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="first.cs" />
+  </ItemGroup>
+
 </Project>
