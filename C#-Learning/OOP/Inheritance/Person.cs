@@ -12,7 +12,7 @@ namespace C__Learning.OOP.Inheritance
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public void Introduce()
+        public virtual void Introduce()
         {
             Console.WriteLine($"Hello, my name is {Name} and I am {Age} years old.");
         }

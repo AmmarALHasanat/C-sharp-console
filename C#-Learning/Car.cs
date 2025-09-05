@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Car
+namespace C__Learning
 {
     internal class Car
     {
@@ -13,6 +13,10 @@ namespace Car
         public Car()
         {
             name = "";
+        }
+        public Car(string var)
+        {
+            name = var;
         }
 
         public string getName() {

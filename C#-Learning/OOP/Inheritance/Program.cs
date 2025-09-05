@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace C__Learning.OOP.Inheritance
 {
@@ -24,7 +25,26 @@ namespace C__Learning.OOP.Inheritance
             student.Introduce(); // Inherited from Person
             student.Study();     // Specific to Student
 
+
+
+
             Console.WriteLine();
+
+            // to cast a base class to a derived class
+            Person person = new Student
+            {
+                Name = "Ammar",
+                Age = 29,
+                StudentID = "S1234"
+            };
+
+            Student student2 = (Student)person;
+            
+            student2.Introduce();
+            student2.Study();
+
+            Console.WriteLine();
+
 
             // Create a Teacher object
             Teacher teacher = new Teacher
@@ -41,6 +61,8 @@ namespace C__Learning.OOP.Inheritance
             Console.WriteLine();
             Console.WriteLine("#######################");
             Console.WriteLine();
+
+            // Note C# support single inheritance only mean Derived:Base , cant inherit Derived:Base1,Base2
         }
     }
 }

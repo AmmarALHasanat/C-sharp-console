@@ -9,12 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="first.cs" />
+    <Compile Remove="List\**" />
+    <EmbeddedResource Remove="List\**" />
+    <None Remove="List\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="List\" />
-    <Folder Include="OOP\Composition\" />
+    <Compile Remove="first.cs" />
   </ItemGroup>
 
   <ItemGroup>
